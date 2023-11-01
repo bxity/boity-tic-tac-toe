@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tic Tac Toe Game</title>
+  </head>
+  <body>
+    <div id="info">
+      <h2 id="info-title">❌TIC TAC TOE⭕</h2>
+      <div class="player-info">
+        <img
+          src="assets/cross.png"
+          alt="player-1-icon"
+          class="cross"
+        />
+        <h1 id="player-1-name">Player 1</h1>
+        <h1>:</h1>
+        <h1 id="player-1-score">0</h1>
+      </div>
+      <div class="player-info">
+        <img
+          src="assets/circle.png"
+          alt="player-2-icon"
+          class="circle"
+        />
+        <h1 id="player-2-name">Player 2</h1>
+        <h1>:</h1>
+        <h1 id="player-2-score">0</h1>
+      </div>
+    </div>
+    <div id="grid">
+      <div id="grid-square-one" class="grid-square"></div>
+      <div id="grid-square-two" class="grid-square"></div>
+      <div id="grid-square-three" class="grid-square"></div>
+      <div id="grid-square-four" class="grid-square"></div>
+      <div id="grid-square-five" class="grid-square"></div>
+      <div id="grid-square-six" class="grid-square"></div>
+      <div id="grid-square-seven" class="grid-square"></div>
+      <div id="grid-square-eight" class="grid-square"></div>
+      <div id="grid-square-nine" class="grid-square"></div>
+    <div id="instructions">
+    <h2 id="instructions-text">Click the button to start</h2>
+    <button id="instructions-btn">Start Game</button>
+    </div>
+    <div id="modal">
+      <div id="modal-content">
+        <h2>Enter Player Name</h2>
+        <form>
+          <label for="player1">Player 1</label>
+          <input type="text" id="player1" name="player1" placeholder="Player 1" maxlength="10" required />
+          <label for="player2">Player 2</label>
+          <input type="text" id="player2" name="player2" placeholder="Player 2" maxlength="10" required />
+          <input type="submit" value="Start Game" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
